@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FDFDFD"
+        tools:context=".Model">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="#2196F3"
+            app:circularflow_defaultRadius="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="306sp"
+            android:layout_height="53sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="24sp"
+            android:text="Model"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="345dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="104sp"
+            android:text="Pertama kita mulai dengan memisahkan data menjadi label dan fitur, yang dimana Kolom 'price_range' dihapus dari data latihan untuk dijadikan target prediksi (y), sementara kolom lainnya diambil sebagai fitur (x)."
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="327sp"
+            android:layout_height="98sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            app:srcCompat="@drawable/model1"
+            tools:src="@drawable/model1" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Lalu menggunakan x.mean dan x.std untuk menghitung rata-rata dan simpangan baku dari nilai-nilai dalam array x, yang merupakan fitur-fitur dari dataset"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20"
+            app:srcCompat="@drawable/model2"
+            tools:src="@drawable/model2" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="347dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Lalu melakukan normalisasi atau standarisasi menggunakan StandardScaler pada fitur-fitur dan mengubah variabel target menggunakan OneHotEncoder, agar data dapat di persiapkan dan digunakan pada model"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21"
+            app:srcCompat="@drawable/model3"
+            tools:src="@drawable/model3" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="347sp"
+            android:layout_height="85sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text=" lalu dilanjutkan dengan membagi dataset menjadi subset pelatihan dan pengujian, seperti kode di bawah"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="350dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:srcCompat="@drawable/model4"
+            tools:src="@drawable/model4" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Selanjutnya kita akan membangun dan mengcompile modelnya,"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:srcCompat="@drawable/model5"
+            tools:src="@drawable/model5" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Lalu kita bisa melihat tampilan plot nya dengan kode di bawah ini."
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:srcCompat="@drawable/model6"
+            tools:src="@drawable/model6" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Lakukan evaluasi model neural network untuk melatih model seperti berikut"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            app:srcCompat="@drawable/model7"
+            tools:src="@drawable/model7" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Dan kita mendapatkan akurasinya sebesar 96%"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="360dp"
+            android:layout_height="171dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            app:srcCompat="@drawable/model8"
+            tools:src="@drawable/model8" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

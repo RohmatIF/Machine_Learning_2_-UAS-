@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fitur"
+        android:background="#DFFFFFFF">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="#2196F3"
+            app:circularflow_defaultRadius="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="306sp"
+            android:layout_height="53sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="24sp"
+            android:text="Fitur"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘battery_power] (Numerik):\nTotal energi yang disimpan dalam baterai dalam ukuran mAh.\n\nContoh:1866 \nTipe Data: Integer \n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘bluetooth’] (Numerik):\nMemliki Bluetooth atau tidak.\n\nContoh:1\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘clock_speed’] (Numerik):\nKecepatan mikroprosesor mengeksekusi perintah.\n\nContoh:2.3\nTipe Data: Float\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘dual_sim’] (Numerik):\nMemiliki dual sim atau tidak.\n\nContoh:1\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘fc’] (Numerik):\nKamera depan mega pixel.\n\nContoh:3\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘bmi’] (Numerik):\nHitungan berat badan.\n\nContoh:27.32\nTipe Data: Float\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘four_g’] (Numerik):\Apakah bisa 4g atau tidak.\n\nContoh:1\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘int_memory’] (Numerik):\nInternal memori dalam gigabytes.\n\nContoh:32\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘m_dep”] (Numerik):\nKedalaman ponsel dalam CM.\n\nContoh:0.1\nTipe Data: Float\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘n_cores’] (Numerik):\nJumlah core dalam ponsel.\n\nContoh:2\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘pc’] (Numerik):\nKamera utama dalam megapixel.\n\nContoh:16\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘px_height’] (Numerik):\nTinggi resolusi pixel.\n\nContoh:356\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘px_width’] (Numerik):\nlebar resolusi pixel.\n\nContoh:810\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘ram’] (Numerik):\nrandom access memory dalam megabytes.\n\nContoh:10246\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘sc_h’] (Numerik):\nTinggi layar dalam CM.\n\nContoh:12\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘sc_w’] (Numerik):\nLebar layer dalam CM.\n\nContoh:9\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘talk_time’] (Numerik):\nWaktu paling lama untuk satu kali pengisian daya saat menggunakannya untuk menelepon.\n\nContoh:11\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘three_g’] (Numerik):\nApakah memiliki 3g atau tidak.\n\nContoh:1\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘touch_screen’] (Numerik):\nApakah memiliki touch screen atau tidak.\n\nContoh:1\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘wifi’] (Numerik):\nMemiliki wifi atau tidak.\n\nContoh:1\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="362sp"
+                    android:layout_height="100sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:background="#2196F3"
+                    android:text="Kolom [‘price_range’] (Numerik):\nIni dalah target variable , 0(low) , 1(medium) , 2(high) , 3(very high).\n\nContoh:1\nTipe Data: Integer\n\n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="419sp"
+        android:layout_height="256sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="84sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_2"
+        tools:src="@tools:sample/avatars" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="548dp"
+        android:layout_height="539dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/background_2"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="295sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="104dp"
+        android:gravity="left"
+        android:text="Hallo User Selamat Datang\n\n"
+        android:textAlignment="textStart"
+        android:textColor="#ECECEC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="326sp"
+        android:layout_height="148sp"
+        android:layout_marginTop="12dp"
+        android:gravity="left"
+        android:text="Nikmati kemudahan mengetahui kualitas dan kategori HP Anda, mulai dari low-budget hingga high-end, hanya dengan beberapa ketukan. Biarkan aplikasi ini membantu Anda memahami lebih dalam tentang perangkat Anda melalui prediksi tingkat golongan HP yang akurat dan informatif. Yuk, mulai petualangan Anda dalam mengeksplorasi dunia gadget bersama kami!"
+        android:textAlignment="textStart"
+        android:textColor="#ECECEC"
+        android:textStyle="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="316sp"
+        android:layout_height="54sp"
+        android:layout_marginTop="204dp"
+        android:layout_marginBottom="115dp"
+        android:backgroundTint="#087698"
+        android:text="Mulai"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_person_2_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
